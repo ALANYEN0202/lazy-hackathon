@@ -1,0 +1,22 @@
+{
+  "name": "optimize",
+  "version": "1.0.0",
+  "description": "## 介紹",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ALANYEN0202/lazy-hackathon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ALANYEN0202/lazy-hackathon/issues"
+  },
+  "homepage": "https://github.com/ALANYEN0202/lazy-hackathon#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
