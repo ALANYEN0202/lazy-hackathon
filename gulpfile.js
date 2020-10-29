@@ -5,8 +5,15 @@ const cleanCSS = require('gulp-clean-css');
 const uglify = require('gulp-uglify');
 const uglifycss = require('gulp-uglifycss');
 const htmlmin = require('gulp-htmlmin');
+const inline = require('gulp-inline')
 
-
+function inlineHTML() {
+  return src('index.html')
+    .pipe(inline({
+      base: './',
+    }))
+    .pipe(dest('dist/'));
+}
 
 function minifyImg() {
   return src('image/*')
@@ -34,4 +41,4 @@ function uglifyJs() {
   .pipe(dest('dist/js'))
 }
 
-exports.default = parallel(minifyImg, minifyCss)
+exports.default = parallel(inlineHTML)
