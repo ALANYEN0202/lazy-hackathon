@@ -41,4 +41,4 @@ function uglifyJs() {
   .pipe(dest('dist/js'))
 }
 
-exports.default = parallel(inlineHTML)
+exports.default = parallel()
